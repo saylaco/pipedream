@@ -1,0 +1,4 @@
+
+> pipedream@1.2.1 build
+> npx tsc --build | node scripts/tsPostBuild.mjs
+

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "es2020",
+    "outDir": "dist",
+    "composite": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "components"
+  ],
+  "include": [
+    "components"
+  ],
+  "allowJs": true,
+  "references": [
+    {
+      "path": "components/moxie"
+    },
+    {
+      "path": "components/flodesk"
+    }
+  ]
+}
