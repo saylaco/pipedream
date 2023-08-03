@@ -1,0 +1,21 @@
+{
+  "name": "@sayla/pd-moxie",
+  "version": "0.0.1",
+  "description": "Moxie Components for Pipedream",
+  "main": "dist/app/moxie.app.mjs",
+  "types": "dist/app/moxie.app.d.ts",
+  "keywords": [
+    "pipedream",
+    "moxie"
+  ],
+  "author": "Sayla Support <support@sayla.co> (https://workflowswork.com/)",
+  "dependencies": {
+    "@pipedream/platform": "^1.4.0"
+  },
+  "devDependencies": {
+    "@pipedream/types": "^0.1.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
