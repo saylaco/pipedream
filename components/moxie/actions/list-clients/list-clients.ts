@@ -6,7 +6,7 @@ export default defineAction({
   name: "List or Search Clients",
   description: "List all Moxie clients. Provide a query to search for specific clients",
   type: "action",
-  version: "0.0.3",
+  version: "0.0.5",
   props: {
     moxie,
     query: {

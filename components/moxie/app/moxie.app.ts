@@ -75,6 +75,9 @@ export default defineApp({
       optional: true,
       default: DEFAULT_DATA.firstContact(),
     },
+    contactQuery: {
+      type: "string",
+    },
     notes: {
       type: "string",
       optional: true,
@@ -102,7 +105,9 @@ export default defineApp({
         ? {
           method: "get",
           path: "action/clients/search",
-          query,
+          params: {
+            query,
+          },
         }
         : {
           method: "get",
@@ -142,9 +147,7 @@ export default defineApp({
         ...args,
         headers,
         url: url ?? `${this._getBaseUrl()}/${path}`,
-        params: url
-          ? undefined
-          : params,
+        params,
         timeout: 10000,
       };
 
